@@ -15,3 +15,4 @@ RUN sudo apt install -y software-properties-common\
  && sudo apt upgrade -y\
  && sudo apt install -y ros-lyrical-desktop
 
+RUN echo "source /opt/ros/lyrical/setup.zsh" >> ~/.zshrc
