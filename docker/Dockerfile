@@ -22,5 +22,6 @@ RUN wget https://downloads.isaacsim.nvidia.com/isaac-sim-standalone-6.0.0-linux-
 && sudo unzip isaac-sim-standalone-6.0.0-linux-x86_64.zip -d /opt/isaac
 
 #Workaround according to https://github.com/isaac-sim/IsaacSim/issues/848
-RUN cd /opt/isaac/extscache/omni.kit.asset_converter-6.0.1+110.1.1.lx64.r.cp312.u7f4/asset_converter_native_bindings/libs/ \
+#TODO: Remove this if possible
+RUN cd /opt/isaac/extscache/omni.kit.asset_converter-5.1.4+110.1.0.lx64.r.cp312.u7f4/asset_converter_native_bindings/libs \
   && sudo ln -s libxml2.so.16 libxml2.so.2
