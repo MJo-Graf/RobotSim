@@ -4,6 +4,8 @@ services:
     image: robot_sim:1.0.0
     tty: true
     stdin_open: true
+    environment:
+      - DISPLAY
     deploy: 
       resources:
         reservations:
