@@ -2,3 +2,12 @@ services:
   robot_sim:
     build: .
     image: robot_sim:1.0.0
+    tty: true
+    stdin_open: true
+    deploy: 
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+              driver: nvidia
+              count: all
