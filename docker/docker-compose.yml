@@ -1,0 +1,4 @@
+services:
+  robot_sim:
+    build: .
+    image: robot_sim:1.0.0
