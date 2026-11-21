@@ -6,6 +6,8 @@ services:
     stdin_open: true
     environment:
       - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
     deploy: 
       resources:
         reservations:

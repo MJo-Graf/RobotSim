@@ -19,4 +19,4 @@ RUN echo "source /opt/ros/lyrical/setup.zsh" >> ~/.zshrc
 
 #RUN wget https://downloads.isaacsim.nvidia.com/isaac-sim-standalone-6.0.0-linux-x86_64.zip --output-file=/tmp/isaac-sim-standalone-6.0.0-linux-x86_64.zip 
 RUN wget https://downloads.isaacsim.nvidia.com/isaac-sim-standalone-6.0.0-linux-x86_64.zip -O /home/maximilian/isaac-sim-standalone-6.0.0-linux-x86_64.zip \
-&& unzip isaac-sim-standalone-6.0.0-linux-x86_64.zip -d /opt/isaac
+&& sudo unzip isaac-sim-standalone-6.0.0-linux-x86_64.zip -d /opt/isaac
